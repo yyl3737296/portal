@@ -1,0 +1,16 @@
+{
+    "overview": {
+        "title": "How to setup NetBrain SDK?",
+        "children": {
+            "childA": {
+                "title": "Child A"
+            },
+            "childB": {
+                "title": "Child B"
+            }
+        }
+    },
+    "tutorial2": {
+        "title": "Tutorial Two"
+    }
+}

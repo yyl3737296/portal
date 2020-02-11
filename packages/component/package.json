@@ -1,0 +1,39 @@
+{
+    "name": "@netbrain/component",
+    "version": "0.0.0",
+    "description": "> TODO: description",
+    "author": "xutao <tao.xu@netbrain.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "dist/component.umd.js",
+    "module": "dist/component.esm.js",
+    "directories": {
+        "dist": "dist",
+        "test": "__tests__"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "clean": "rimraf dist",
+        "watch": "cross-env NODE_ENV=development rollup -cw",
+        "build": "run-s clean build:prod",
+        "build:dev": "cross-env NODE_ENV=development rollup -c",
+        "build:prod": "cross-env NODE_ENV=production rollup -c",
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "peerDependencies": {
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-use": "^13.21.0",
+        "html-react-parser": "^0.10.0",
+        "@netbrain/core": "0.0.0"
+    },
+    "dependencies": {
+        "react": "^16.12.0",
+        "@netbrain/core": "0.0.0"
+    }
+}

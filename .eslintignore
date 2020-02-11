@@ -1,0 +1,9 @@
+packages/*/build/*
+packages/*/dist/*
+config/*
+*.d.ts
+build
+*.css
+*.scss
+*.less
+*.config.js

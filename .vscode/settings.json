@@ -1,0 +1,29 @@
+{
+    "beautify.config": {
+        "brace_style": "collapse,preserve-inline"
+    },
+    "eslint.packageManager": "yarn",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "jest.autoEnable": false,
+    "jest.debugMode": true,
+    "files.exclude": {
+        "*.lock": true,
+        "**/.git": true,
+        "**/.jest-cache": true,
+        // "**/.vscode": true,
+        // "**/dist": true,
+        // "**/build": true,
+        "**/.editorconfig": true,
+        "**/.eslintignore": true,
+        "**/.eslintrc.js": true,
+        "**/.gitignore": true,
+        "**/.npmignore": true,
+        "**/.prettierrc.js": true,
+        "**/.stylelintrc.js": true,
+        "**/._*": true
+    },
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true
+}

@@ -1,0 +1,37 @@
+{
+    "name": "@netbrain/core",
+    "version": "0.0.0",
+    "description": "> TODO: description",
+    "author": "xutao <tao.xu@netbrain.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "dist/core.umd.js",
+    "module": "dist/core.esm.js",
+    "directories": {
+        "dist": "dist",
+        "test": "__tests__"
+    },
+    "files": [
+        "dist",
+        "index.d.ts"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "clean": "rimraf dist",
+        "watch": "cross-env NODE_ENV=development rollup -cw",
+        "build": "run-s clean build:prod",
+        "build:dev": "cross-env NODE_ENV=development rollup -c",
+        "build:prod": "cross-env NODE_ENV=production rollup -c",
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "peerDependencies": {
+        "axios": "^0.19.0",
+        "query-string": "^6.9.0"
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "query-string": "^6.9.0"
+    }
+}
